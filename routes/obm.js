@@ -24,15 +24,15 @@ router.post('/', function(req, res) {
 // unwrap the xml and return object
 unwrapMessage = function(obj) {
   try {
-
+    console.log('obj',obj);
     var orgId = obj['soapenv:envelope']['soapenv:body'][0].notifications[0].organizationid[0];
-    var contactId = obj['soapenv:envelope']['soapenv:body'][0].notifications[0].notification[0].sobject[0]['sf:id'][0];
-    var mobilePhone = obj['soapenv:envelope']['soapenv:body'][0].notifications[0].notification[0].sobject[0]['sf:mobilephone'][0];
+    var id = obj['soapenv:envelope']['soapenv:body'][0].notifications[0].notification[0].sobject[0]['sf:id'][0];
+    var name = obj['soapenv:envelope']['soapenv:body'][0].notifications[0].notification[0].sobject[0]['sf:Name'][0];
 
     return {
       orgId: orgId,
-      contactId: contactId,
-      mobilePhone: mobilePhone
+      id: id,
+      name: name
     };
 
   } catch (e) {
