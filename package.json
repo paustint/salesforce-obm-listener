@@ -1,14 +1,27 @@
 {
-  "name": "sfdc_endpoint",
-  "version": "1.0.0",
-  "description": "Salesforce.com endpoint server",
-  "main": "app.js",
+  "name": "saleforce-obm-catcher",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "mocha"
   },
-  "author": "austin.turner@atginfo.com",
-  "license": "ISC",
+  "engines": {
+    "node": "0.10.x"
+  },  
   "dependencies": {
-    "soap": "^0.13.0"
+    "body-parser": "~1.8.1",
+    "cookie-parser": "~1.3.3",
+    "debug": "~2.0.0",
+    "express": "~4.9.0",
+    "express-xml-bodyparser": "0.0.6",
+    "jade": "~1.6.0",
+    "lodash": "^3.1.0",
+    "mocha": "^2.1.0",
+    "morgan": "~1.3.0",
+    "serve-favicon": "~2.1.3",
+    "should": "^5.0.0",
+    "superagent": "^0.21.0",
+    "xml2js": "^0.4.5"
   }
 }
