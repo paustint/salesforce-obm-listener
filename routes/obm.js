@@ -1,6 +1,7 @@
 var express = require('express');
 var _ = require("lodash");
 var router = express.Router();
+var util = require('util');
 
 router.post('/', function(req, res) {
   // get the obm as an object
@@ -23,7 +24,8 @@ router.post('/', function(req, res) {
 
 // unwrap the xml and return object
 unwrapMessage = function(obj) {
-  console.log('obj',obj['soapenv:envelope']['soapenv:body']);
+
+  console.log(util.inspect(obj, false, null));
   try {
     var orgId = obj['soapenv:envelope']['soapenv:body'][0].notifications[0].organizationid[0];
     var id = obj['soapenv:envelope']['soapenv:body'][0].notifications[0].notification[0].sobject[0]['sf:id'][0];
