@@ -1,0 +1,14 @@
+{
+  "name": "sfdc_endpoint",
+  "version": "1.0.0",
+  "description": "Salesforce.com endpoint server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "austin.turner@atginfo.com",
+  "license": "ISC",
+  "dependencies": {
+    "soap": "^0.13.0"
+  }
+}
