@@ -23,7 +23,7 @@ router.post('/', function(req, res) {
 
 // unwrap the xml and return object
 unwrapMessage = function(obj) {
-  console.log('obj',obj);
+  console.log('obj',obj['soapenv:envelope']['soapenv:body']);
   try {
     var orgId = obj['soapenv:envelope']['soapenv:body'][0].notifications[0].organizationid[0];
     var id = obj['soapenv:envelope']['soapenv:body'][0].notifications[0].notification[0].sobject[0]['sf:id'][0];
