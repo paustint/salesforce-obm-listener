@@ -1,5 +1,7 @@
 # Salesforce Outbound Message Catcher
 
+Application modified from [here](https://www.topcoder.com/blog/catching-salesforce-outbound-messages-with-nodejs/)
+
 Simple node.js application for catching [Outbound Messages](https://developer.salesforce.com/page/Outbound_Messaging) sent from Salesforce.
 
 Outbound messages are sent in XML so this will catch the message and convert the XML to an object that you can easily work with to do awesome stuff.
