@@ -1,4 +1,4 @@
-# Salesforce Outbound Message Catcher
+# Salesforce Outbound Message Listener
 
 Application inspired from [this blog post](https://www.topcoder.com/blog/catching-salesforce-outbound-messages-with-nodejs/)
 
