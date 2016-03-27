@@ -5,7 +5,7 @@ Application inspired from [this blog post](https://www.topcoder.com/blog/catchin
 Simple node.js application for catching [Outbound Messages](https://developer.salesforce.com/page/Outbound_Messaging) sent from Salesforce.
 
 Outbound messages are sent in XML so this will catch the message and convert the XML to an object that can easily be worked with
-Keys for the JSON object are modified to remove 'sf:' prefix from all keys.
+keys for the JSON object are modified to remove 'sf:' prefix from all keys.
 
 ## Sample processed data
 ```
