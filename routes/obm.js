@@ -51,7 +51,7 @@ unwrapMessage = function(obj) {
     var fields = {};
     var keys = Object.keys(sObject);
     for (var i = 0; i < keys.length; i++) {
-      if (keys[i] !== sObject['$']) {
+      if (keys[i] !== '$') {
         fields[keys[i].replace('sf:','')] = sObject[keys[i]][0];
       }
     }
