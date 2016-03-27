@@ -42,7 +42,7 @@ npm start # start the server locally
 npm test # run all tests, server must be running
 ```
 
-To deploy to heroku (assuming all heroku endpoints and config has been done):
+To deploy on heroku (assuming all heroku endpoints and config has been done):
 ```
 git add . -A
 git commit -am "some comit message"
