@@ -26,18 +26,28 @@ Clone the repository
 
 If desired, create a mongolab account to capture and log the messages in and out.
 
-Create file named `.env` and add the db connection string, for example:
+Running locally or in a non-Heroku environment: Create file named `.env` and add the db connection string, for example:
 
 ```
 MONGOLAB_URI=mongodb://example:example@ds123456.mlab.com:25400/salesforce-obm-listener
 ```
 
+For Heroku, run the following `heroku config:set MONGOLAB_URI=mongodb://example:example@ds123456.mlab.com:25400/salesforce-obm-listener`
+
 From the command line type:
 
 ```
 npm install # install dependencies
-npm start # start the server
+npm start # start the server locally
 npm test # run all tests, server must be running
+```
+
+To deploy to heroku (assuming all heroku endpoints and config has been done):
+```
+git add . -A
+git commit -am "some comit message"
+git push heroku master
+heroku logs -t # this will show console log messages
 ```
 
 The salesforce endpoint should be configured to `<heroku url here>/sfdc/obm` initially unless additional routes are added.
