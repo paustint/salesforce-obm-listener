@@ -52,7 +52,7 @@ heroku logs -t # this will show console log messages
 
 The salesforce endpoint should be configured to `<heroku url here>/sfdc/obm` initially unless additional routes are added.
 
-To implement additional actions, modify the routes the desired endpoints and add controller functtions to /server/controllers/sfdcControllers.js (or make your own controllers if needed)
+To implement additional actions, modify the routes to the desired endpoints and add controller functions to `/server/controllers/sfdcControllers.js` (or make your own controllers if needed)
 
 ## Contributors
 * Austin Turner -> [paustint](https://github.com/paustint)
