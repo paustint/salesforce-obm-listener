@@ -40,6 +40,8 @@ npm start # start the server
 npm test # run all tests, server must be running
 ```
 
+The salesforce endpoint should be configured to `<heroku url here>/sfdc/obm` initially unless additional routes are added.
+
 To implement additional actions, modify the routes the desired endpoints and add controller functtions to /server/controllers/sfdcControllers.js (or make your own controllers if needed)
 
 ## Contributors
