@@ -29,10 +29,10 @@ If desired, create a mongolab account to capture and log the messages in and out
 Running locally or in a non-Heroku environment: Create file named `.env` and add the db connection string, for example:
 
 ```
-MONGOLAB_URI=mongodb://example:example@ds123456.mlab.com:25400/salesforce-obm-listener
+MONGOLAB_URI=mongodb://example:examplePassword@ds123456.mlab.com:25400/db-endpoint
 ```
 
-For Heroku, run the following `heroku config:set MONGOLAB_URI=mongodb://example:example@ds123456.mlab.com:25400/salesforce-obm-listener`
+For Heroku, run the following `heroku config:set MONGOLAB_URI=mongodb://example:examplePassword@ds123456.mlab.com:25400/db-endpoint`
 
 From the command line type:
 
